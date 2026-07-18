@@ -293,47 +293,7 @@ export const softSkills = [
   "Adaptability",
 ];
 
-export const education = [
-  {
-    id: 1,
-    degree: "Master's Degree in Computer Science",
-    field: "Specialization in Software Engineering",
-    institution: "University of Technology, Casablanca",
-    period: "2022 - 2025",
-    highlights: [
-      "Graduated with Honors (Mention: Very Good)",
-      "Master's Thesis: Modern Web Application Architecture",
-      "Published 2 research papers in international conferences",
-      "President of University Coding Club",
-    ],
-  },
-  {
-    id: 2,
-    degree: "Bachelor's in Computer Science",
-    field: "Major in Web Technologies",
-    institution: "Faculty of Sciences, Rabat",
-    period: "2019 - 2022",
-    highlights: [
-      "Advanced Algorithms",
-      "Database Systems",
-      "Machine Learning",
-      "Cloud Computing",
-      "Cybersecurity",
-    ],
-  },
-  {
-    id: 3,
-    degree: "Scientific Baccalaureate",
-    field: "Mathematics & Physics Stream",
-    institution: "High School of Excellence, Casablanca",
-    period: "2016 - 2019",
-    highlights: [
-      "National Mathematics Competition - 2nd Place",
-      "School Programming Contest Winner",
-      "Graduated with Honors",
-    ],
-  },
-];
+
 
 export const projects = [
   {
@@ -404,21 +364,4 @@ export const projects = [
 
 export const projectCategories = ["All", "Frontend", "MERN", "Full Stack" , "AI"];
 
-export const learningTimeline = [
-  { year: "2019", event: "Started studying Computer Science" },
-  { year: "2020", event: "Began learning HTML, CSS, and JavaScript" },
-  { year: "2021", event: "Built first personal projects" },
-  { year: "2022", event: "Started Master's degree in Software Engineering" },
-  {
-    year: "2023",
-    event: "Completed freeCodeCamp certification, started learning React",
-  },
-  {
-    year: "2024",
-    event: "AWS Cloud Practitioner certification, building portfolio projects",
-  },
-  {
-    year: "2025",
-    event: "Currently learning MERN stack (React, Node.js, MongoDB)",
-  },
-];
+
