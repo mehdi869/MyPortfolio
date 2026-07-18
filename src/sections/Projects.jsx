@@ -1,31 +1,33 @@
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, Filter } from 'lucide-react'
-import { GithubIcon } from '../components/BrandIcons'
-import SectionTitle from '../components/SectionTitle'
-import { projects, projectCategories } from '../data/portfolioData'
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, Filter } from "lucide-react";
+import { GithubIcon } from "../components/BrandIcons";
+import SectionTitle from "../components/SectionTitle";
+import { projects, projectCategories } from "../data/portfolioData";
 
 function BentoCard({ project, index, featured }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       className={`group glass-card rounded-2xl overflow-hidden hover:border-primary-500/15 transition-all duration-500 ${
-        featured ? 'md:col-span-2 md:row-span-2' : ''
+        featured ? "md:col-span-2 md:row-span-2" : ""
       }`}
     >
-      <div className={`relative bg-gradient-to-br from-surface-800 to-surface-900 overflow-hidden ${
-        featured ? 'h-56 md:h-72' : 'h-40'
-      }`}>
+      <div
+        className={`relative bg-gradient-to-br from-surface-800 to-surface-900 overflow-hidden ${
+          featured ? "h-56 md:h-72" : "h-40"
+        }`}
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-primary-500/8 to-accent-500/8 group-hover:from-primary-500/15 group-hover:to-accent-500/15 transition-all duration-700" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className={`font-bold text-white/[0.03] group-hover:text-white/[0.06] transition-all duration-700 group-hover:scale-110 ${
-            featured ? 'text-8xl md:text-9xl' : 'text-6xl'
-          }`}>
-            {project.name[0]}
-          </span>
+        <div className="absolute inset-0">
+          <img
+            src={project.image}
+            alt={project.name}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
         </div>
         <div className="absolute top-3 left-3 flex gap-2">
           <span className="px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-primary-500/20 text-primary-400 border border-primary-500/20">
@@ -39,15 +41,19 @@ function BentoCard({ project, index, featured }) {
         </div>
       </div>
 
-      <div className={`p-5 ${featured ? 'md:p-7' : ''}`}>
-        <h3 className={`font-bold text-white mb-2 group-hover:text-primary-400 transition-colors ${
-          featured ? 'text-xl md:text-2xl' : 'text-lg'
-        }`}>
+      <div className={`p-5 ${featured ? "md:p-7" : ""}`}>
+        <h3
+          className={`font-bold text-white mb-2 group-hover:text-primary-400 transition-colors ${
+            featured ? "text-xl md:text-2xl" : "text-lg"
+          }`}
+        >
           {project.name}
         </h3>
-        <p className={`text-surface-200/50 leading-relaxed mb-4 ${
-          featured ? 'text-sm md:text-base' : 'text-sm line-clamp-2'
-        }`}>
+        <p
+          className={`text-surface-200/50 leading-relaxed mb-4 ${
+            featured ? "text-sm md:text-base" : "text-sm line-clamp-2"
+          }`}
+        >
           {project.description}
         </p>
 
@@ -97,16 +103,16 @@ function BentoCard({ project, index, featured }) {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState('All')
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects =
-    activeCategory === 'All'
+    activeCategory === "All"
       ? projects
-      : projects.filter((p) => p.category === activeCategory)
+      : projects.filter((p) => p.category === activeCategory);
 
   return (
     <section id="projects" className="py-20 md:py-28">
@@ -130,8 +136,8 @@ export default function Projects() {
               onClick={() => setActiveCategory(cat)}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-white text-surface-950 shadow-lg'
-                  : 'glass-card text-surface-200/60 hover:text-white hover:border-primary-500/20'
+                  ? "bg-white text-surface-950 shadow-lg"
+                  : "glass-card text-surface-200/60 hover:text-white hover:border-primary-500/20"
               }`}
             >
               {cat}
@@ -170,5 +176,5 @@ export default function Projects() {
         )}
       </div>
     </section>
-  )
+  );
 }

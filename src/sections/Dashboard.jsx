@@ -91,7 +91,7 @@ export default function Dashboard() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -112,11 +112,7 @@ export default function Dashboard() {
           <div className="mt-6 pt-6 border-t border-white/[0.04] flex flex-wrap items-center gap-4 text-xs text-surface-200/40">
             <div className="flex items-center gap-2">
               <Clock size={12} />
-              <span>Last updated: Just now</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <TrendingUp size={12} />
-              <span>Productivity: +23% this month</span>
+              <span>Last updated: 18 jul 2026</span>
             </div>
           </div>
         </div>

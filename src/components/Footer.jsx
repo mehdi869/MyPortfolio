@@ -13,8 +13,6 @@ const navLinks = [
 const socialLinks = [
   { icon: GithubIcon, url: personalInfo.social.github, label: 'GitHub' },
   { icon: LinkedinIcon, url: personalInfo.social.linkedin, label: 'LinkedIn' },
-  { icon: TwitterIcon, url: personalInfo.social.twitter, label: 'Twitter' },
-  { icon: CodePenIcon, url: personalInfo.social.codepen, label: 'CodePen' },
 ]
 
 export default function Footer() {

@@ -41,11 +41,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 text-sm text-surface-200/50">
                 <Calendar size={14} className="text-primary-400" />
-                Since 2019
-              </div>
-              <div className="flex items-center gap-2 text-sm text-surface-200/50">
-                <Coffee size={14} className="text-primary-400" />
-                Coffee-powered
+                Since 2022
               </div>
             </div>
           </motion.div>

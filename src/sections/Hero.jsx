@@ -123,14 +123,6 @@ export default function Hero() {
               >
                 Contact Me
               </button>
-              <a
-                href="#"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-light text-white font-semibold text-sm hover:border-primary-500/30 transition-all duration-300"
-              >
-                <Download size={16} />
-                CV
-              </a>
             </div>
 
             <div className="flex gap-3">
@@ -219,8 +211,8 @@ export default function Hero() {
                 <div className="grid grid-cols-2 gap-2 mt-4">
                   <DashboardWidget label="Status" value="Building" delay={1.2} />
                   <DashboardWidget label="Stack" value="MERN" delay={1.3} />
-                  <DashboardWidget label="Commits" value="47 this week" delay={1.4} />
-                  <DashboardWidget label="Uptime" value="99.9%" delay={1.5} />
+                  <DashboardWidget label="Commits" value="24 this week" delay={1.4} />
+                  <DashboardWidget label="Current Goal" value="Freelancing" delay={1.5} />
                 </div>
               </div>
             </div>

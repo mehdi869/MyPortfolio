@@ -28,7 +28,7 @@ export const personalInfo = {
     "UI/UX Builder",
     "Problem Solver",
   ],
-  location: "Algeria, Algerie",
+  location: "Algeria, Alger",
   email: "armehdi0101@gmail.com",
   status: "Open to Work",
   profileImage: "/images/pirate_hate.png",
@@ -43,8 +43,6 @@ export const personalInfo = {
   social: {
     github: "https://github.com/mehdi869",
     linkedin: "https://www.linkedin.com/in/mehdi-ariba",
-    twitter: "https://twitter.com",
-    codepen: "https://codepen.io",
   },
 };
 
@@ -99,35 +97,29 @@ export const terminalLines = [
 
 export const journeyTimeline = [
   {
-    year: "2019",
-    event: "Started studying Computer Science",
-    type: "milestone",
-  },
-  {
-    year: "2020",
-    event: "Began learning HTML, CSS, and JavaScript",
-    type: "learning",
-  },
-  { year: "2021", event: "Built first personal projects", type: "project" },
-  {
     year: "2022",
-    event: "Started Master's degree in Software Engineering",
+    event: "Started my journey in Computer Science",
     type: "milestone",
   },
   {
     year: "2023",
-    event: "Completed freeCodeCamp, started learning React",
+    event: "Focused on Computer Systems and Software Engineering",
     type: "learning",
   },
   {
-    year: "2024",
-    event: "AWS certification, building full-stack apps",
-    type: "project",
+    year: "2025",
+    event: "Graduated with a Bachelor's Degree in Computer Systems and Software Engineering",
+    type: "milestone",
   },
   {
     year: "2025",
-    event: "MERN stack mastery, open for freelance",
+    event: "Started a Master's Degree in Visual Computing",
     type: "milestone",
+  },
+  {
+    year: "2026",
+    event: "Learning the MERN Stack and building real-world full-stack projects",
+    type: "learning",
   },
 ];
 
@@ -307,7 +299,7 @@ export const education = [
     degree: "Master's Degree in Computer Science",
     field: "Specialization in Software Engineering",
     institution: "University of Technology, Casablanca",
-    period: "2022 - 2024",
+    period: "2022 - 2025",
     highlights: [
       "Graduated with Honors (Mention: Very Good)",
       "Master's Thesis: Modern Web Application Architecture",
@@ -343,33 +335,6 @@ export const education = [
   },
 ];
 
-export const certifications = [
-  {
-    id: 1,
-    name: "Full Stack Development",
-    issuer: "freeCodeCamp",
-    year: "2023",
-    description: "Complete Web Development Bootcamp - 300+ hours",
-    url: "https://www.freecodecamp.org",
-  },
-  {
-    id: 2,
-    name: "React & Redux Mastery",
-    issuer: "Online Course",
-    year: "2023",
-    description: "Advanced Frontend Development - 80 hours",
-    url: "#",
-  },
-  {
-    id: 3,
-    name: "AWS Cloud Practitioner",
-    issuer: "AWS",
-    year: "2024",
-    description: "Cloud Infrastructure & Services - 60 hours",
-    url: "https://aws.amazon.com/certification/",
-  },
-];
-
 export const projects = [
   {
     id: 1,
@@ -386,7 +351,7 @@ export const projects = [
       "Category Management",
       "Budget Tracking",
     ],
-    image: "/images/project-expense.png",
+    image: "./public/images/expense-tracker.png",
     github: "https://github.com/mehdi869/Expense-Tracker",
     live: "https://expense-tracker-frontend-lc2c.onrender.com ",
     featured: true,
@@ -401,7 +366,7 @@ export const projects = [
     category: "Frontend",
     tech: ["React", "TailwindCSS", "Framer Motion", "Vite"],
     features: ["Scroll Animations", "Dark Theme", "Bento Grid", "Mobile-First"],
-    image: "/images/project-portfolio.png",
+    image: "./public/images/myportfolio.png",
     github: "https://github.com/mehdi869/MyPortfolio",
     live: "https://mehdi869.github.io/MyPortfolio/",
     featured: true,
@@ -430,7 +395,7 @@ export const projects = [
       "AI Candidate Summaries",
       "Hiring Pipeline Monitoring",
     ],
-    image: "/images/project-resume-screener.png",
+    image: "./public/images/ai-resume-screener.png",
     github: "https://github.com/mehdi869/resume-screener-hr-tracker2",
     live: "https://resume-screener-hr-tracker2-frontend.onrender.com",
     featured: true,
