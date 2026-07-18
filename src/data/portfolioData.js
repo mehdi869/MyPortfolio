@@ -49,7 +49,7 @@ export const personalInfo = {
 export const dashboardCards = [
   {
     label: "Current Project",
-    value: "Fintech Ecommerce Dashboard",
+    value: "Multi-tenant SaaS platform for e-commerce analytics",
     description: "Full-stack MERN application with auth and analytics",
     icon: Code2,
     color: "primary",
