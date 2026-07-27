@@ -298,13 +298,53 @@ export const softSkills = [
 export const projects = [
   {
     id: 1,
+    name: "FinFlow",
+    description:
+      "Production-ready multi-tenant SaaS platform for e-commerce management with Stripe subscriptions, analytics, and role-based access control.",
+    longDescription:
+      "FinFlow is a full-stack MERN SaaS application designed for modern businesses. It features secure JWT authentication, multi-tenant organization management, customer and inventory management, order tracking, interactive analytics dashboards, and a complete Stripe subscription billing system. Built with scalability, security, and performance in mind, the platform provides a responsive Material UI interface and a robust REST API architecture suitable for production environments.",
+    category: "SaaS",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Material UI",
+      "Stripe",
+      "JWT",
+      "REST API",
+    ],
+    features: [
+      "Multi-Tenant Architecture",
+      "Stripe Subscription Billing",
+      "JWT Authentication",
+      "Role-Based Access Control",
+      "Inventory Management",
+      "Customer Management",
+      "Order Management",
+      "Interactive Analytics Dashboard",
+    ],
+    image: "images/dashboard.png",
+    github: "https://github.com/mehdi869/fintech-ecommerce-dashboard2",
+    live: "https://finflow-frontend-6mnv.onrender.com",
+    featured: true,
+  },
+  {
+    id: 2,
     name: "Expense Tracker",
     description:
       "Full-stack MERN expense tracking application with user authentication, category management, and visual analytics dashboard.",
     longDescription:
       "A complete MERN stack expense tracker featuring JWT authentication, real-time chart visualizations, budget management, and a responsive dashboard. Built with security and scalability in mind.",
     category: "MERN",
-    tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Chart.js"],
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Chart.js",
+    ],
     features: [
       "JWT Authentication",
       "Real-time Charts",
@@ -313,26 +353,36 @@ export const projects = [
     ],
     image: "images/expense-tracker.png",
     github: "https://github.com/mehdi869/Expense-Tracker",
-    live: "https://expense-tracker-frontend-lc2c.onrender.com ",
+    live: "https://expense-tracker-frontend-lc2c.onrender.com",
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     name: "Portfolio Website",
     description:
-      "A premium developer portfolio built with React, TailwindCSS, and Framer Motion featuring smooth animations and a dark theme.",
+      "A premium developer portfolio built with React, Tailwind CSS, and Framer Motion featuring smooth animations and a modern responsive design.",
     longDescription:
-      "My personal portfolio designed to showcase projects, skills, and journey as a developer. Features a premium dark theme, smooth scroll animations, bento grid layouts, and a fully responsive design.",
+      "My personal portfolio designed to showcase projects, technical skills, and development journey. Features a premium UI, smooth animations, responsive layouts, and optimized performance across all devices.",
     category: "Frontend",
-    tech: ["React", "TailwindCSS", "Framer Motion", "Vite"],
-    features: ["Scroll Animations", "Dark Theme", "Bento Grid", "Mobile-First"],
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vite",
+    ],
+    features: [
+      "Responsive Design",
+      "Smooth Animations",
+      "Modern UI",
+      "Project Showcase",
+    ],
     image: "images/myportfolio.png",
     github: "https://github.com/mehdi869/MyPortfolio",
     live: "https://mehdi869.github.io/MyPortfolio/",
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     name: "AI-Powered Resume Screener",
     description:
       "Intelligent recruitment platform that leverages Google Gemini AI to evaluate candidate resumes and streamline hiring decisions.",
@@ -362,6 +412,6 @@ export const projects = [
   },
 ];
 
-export const projectCategories = ["All", "Frontend", "MERN", "Full Stack" , "AI"];
+export const projectCategories = ["All", "Frontend", "MERN", "Full Stack" , "AI" , "SaaS"];
 
 

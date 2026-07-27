@@ -112,7 +112,7 @@ export default function Dashboard() {
           <div className="mt-6 pt-6 border-t border-white/[0.04] flex flex-wrap items-center gap-4 text-xs text-surface-200/40">
             <div className="flex items-center gap-2">
               <Clock size={12} />
-              <span>Last updated: 18 jul 2026</span>
+              <span>Last updated: 27 jul 2026</span>
             </div>
           </div>
         </div>

@@ -211,7 +211,7 @@ export default function Hero() {
                 <div className="grid grid-cols-2 gap-2 mt-4">
                   <DashboardWidget label="Status" value="Building" delay={1.2} />
                   <DashboardWidget label="Stack" value="MERN" delay={1.3} />
-                  <DashboardWidget label="Commits" value="24 this week" delay={1.4} />
+                  <DashboardWidget label="Latest Project" value="FinFlow" delay={1.4} />
                   <DashboardWidget label="Current Goal" value="Freelancing" delay={1.5} />
                 </div>
               </div>
